@@ -59,9 +59,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
         {% if user.is_authenticated %}
-     <!-- <li class="nav-item">
+     <li class="nav-item">
         <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-      </li> --!>
+     <a class="nav-link" href="{% url 'create' %}">Create</a>
+      </li>
         {% else %}
 <li class="nav-item">
         <a class="nav-link" href="{% url 'signup' %}">Sign Up <span class="sr-only">(current)</span></a>
